@@ -6,5 +6,5 @@ TargetRoute53Name:altstream
 SourcePassword:stream1
 RelayPassword:relay1
 AdminPassword:admin1
-ShoutCastAMI:ami-f1384f94
+ShoutCastAMI:ami-ce26c1a1
 ListenAddress:0.0.0.0
