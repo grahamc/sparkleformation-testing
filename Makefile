@@ -13,6 +13,13 @@ create: parameters.oneline
                             -m '$$(cat parameters.oneline)' \
                             '${STACKNAME}'"
 
+destroy:
+	nix-shell --run "sfn destroy \
+                            --no-interactive-parameters \
+                            --no-processing \
+                            '${STACKNAME}'"
+
+
 dry-run: parameters.oneline
 	nix-shell --run "sfn update \
                             --no-interactive-parameters \
