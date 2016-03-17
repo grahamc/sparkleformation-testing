@@ -1,0 +1,10 @@
+KeyName:september15
+SSHLocation:0.0.0.0/0
+ShoutCastInstanceType:t2.micro
+TargetRoute53Domain:gsc.io.
+TargetRoute53Name:examplestream
+SourcePassword:stream1
+RelayPassword:relay1
+AdminPassword:admin1
+ShoutCastAMI:ami-f1384f94
+ListenAddress:0.0.0.0
