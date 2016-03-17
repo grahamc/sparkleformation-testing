@@ -35,7 +35,7 @@ Configuration.new do
     elsif ENV['AWS_PROFILE']
        aws_profile_name ENV['AWS_PROFILE']
     else
-        aws_iam_instance_profile True
+        aws_iam_instance_profile true
     end
 
 
