@@ -1,4 +1,4 @@
-KeyName:september15
+KeyName:charon-a37fc91c-eb22-11e5-8aa7-7831c1bc8adc-ndndx-ec2-eu-central-1
 SSHLocation:0.0.0.0/0
 ShoutCastInstanceType:t2.micro
 TargetRoute53Domain:gsc.io.
