@@ -9,8 +9,8 @@ let
     bundler = pkgs.bundler;
   };
 in rec {
-  mynixops = stdenv.mkDerivation rec {
-    name = "cloudformation-for-stuff";
+  shoutcast = stdenv.mkDerivation rec {
+    name = "shoutcast-example";
     version = "0.1";
 
     src = ./.;
@@ -20,7 +20,6 @@ in rec {
     ];
 
     buildCommand = ''
-
       cp -r "$src" "$out"
     '';
 
