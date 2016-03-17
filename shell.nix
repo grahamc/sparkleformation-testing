@@ -13,12 +13,19 @@ in rec {
     name = "cloudformation-for-stuff";
     version = "0.1";
 
-   buildInputs = [
-     sparkle
-   ];
+    src = ./.;
 
-   shellHook = ''
-     export SSL_CERT_FILE=${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt
-   '';
+    buildInputs = [
+      sparkle
+    ];
+
+    buildCommand = ''
+
+      cp -r "$src" "$out"
+    '';
+
+    shellHook = ''
+      export SSL_CERT_FILE=${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt
+    '';
   };
 }
